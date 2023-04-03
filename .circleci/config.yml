@@ -1,4 +1,3 @@
-
 version: 2.1
 
 workflows:
@@ -18,17 +17,16 @@ workflows:
           requires:
             - build
 
-
 jobs:
   build:
     working_directory: ~/DevOpsProject23
     docker:
-      - image: circleci/node:10.16.3
+      - image: circleci/node:latest
     steps:
       - checkout
       - run: 
           name: update-npm
-          command: 'sudo npm install -g npm@5'
+          command: 'sudo npm install -g npm@8.1.4'
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
@@ -39,4 +37,11 @@ jobs:
           paths:
             - ./node_modules
 
-#deploy
+  deploy:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - run:
+          name: deploy-application
+          command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_PUBLIC_DNS "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf DevOpsProject23/; git clone https://github.com/CloByrne/DevOpsProject23.git; ls; cd DevOpsProject23; ls; source deploy.sh"
+#deployment successful
