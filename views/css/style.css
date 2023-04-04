@@ -1,0 +1,294 @@
+/* Reset defaults back to 0 */
+/* Do this before all sites, border-box especially!!! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Main Styling here */
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7rem;
+}
+
+
+/* Container class */
+.container {
+  margin: auto;
+  max-width: 68.75rem;
+  overflow: auto;
+  padding: 0 1.25rem ;
+}
+
+
+/* Utility Classes */
+.text-primary {
+  color: #f7c08a;
+}
+
+.text-secondary {
+  color: #fff;
+}
+
+.lead {
+  font-size: 1.225rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2, h3 {
+  padding-bottom: 1.25rem;
+}
+
+p {
+  margin: .625rem 0;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #fff;
+  background: #333;
+  padding: .813rem 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333
+}
+
+.bg-dark {
+  color: #fff;
+  background: #333;
+}
+
+.bg-light {
+  color: #333;
+  background: #fff;
+}
+
+.bg-primary {
+  color: #333;
+  background: #f7c08a;
+}
+
+.clr {
+  clear: both;
+}
+
+
+/* Heading sizes */
+.l-heading {
+  font-size: 2.5rem;
+}
+
+/* Padding */
+.py-1 { padding: .625rem 0; }
+.py-2 { padding: 1.25rem 0; }
+.py-3 { padding: 1.875rem 0; }
+
+
+/* Navbar - Basic with some styling*/
+#navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 1.25rem;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;  
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Showcase */
+#showcase {
+  background: url(../img/image_resources/showcase.jpg) no-repeat center center/cover;
+  height: 37.5rem;
+}
+
+#showcase .showcase-content {
+  text-align: center;
+  color: #fff;
+  padding-top: 10.625rem;
+}
+
+#showcase .showcase-content a {
+  margin-top: 1rem;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 3.75rem;
+  line-height: 1.2em;
+
+}
+
+
+#showcase .showcase-content p {
+  padding-bottom: 1rem;
+  line-height: 1.7em;
+
+}
+
+/* Home-Info */
+#home-info {
+  height: 25rem;
+}
+
+#home-info .info-img {
+  float: left;
+  background: url('../img/image_resources/photo-1.jpg');
+  width: 50%;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  padding: 3rem .8rem;
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 3rem;
+}
+
+/* Home Features boxes */
+/* #home-features {
+  height: 25rem;
+} */
+
+.box {
+  float: left;
+  text-align: center;
+  width: 33.3%;
+  padding: 3.125rem;
+}
+
+#home-features i {
+  margin-bottom: .625rem;
+}
+
+
+/* About Info*/
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}  
+
+/* Testimonials */
+#testimonials {
+  height: 37.5rem;
+  background: url(../img/image_resources/test-bg.jpg) no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+#testimonials h2 {
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form .form-group label {
+  display:block ;
+  margin-bottom: 5px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+/* Footer */
+#main-footer {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  
+}
