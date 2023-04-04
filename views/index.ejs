@@ -1,9 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9597a2b495.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title><%= title %></title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">HBT</a></h1>
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>    
+      </div>
+    </nav>
+
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1><span class="text-primary">Enjoy</span> your stay</h1>
+          <p class="lead"><%= lead %></p>
+          <a class="btn" href="about.html">About Our Hotel</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2><span class="text-primary">The History</span> Of Our Hotel</h2>
+      <p><%= paragraph %></p>
+      <a href="./about.html" class="btn btn-light">Read More</a>
+    </div>
+
+  </section>
+
+  <section id="home-features">
+    <% for(let i = 0; i < features.length; i++) { %>
+      <div class="box <%= features[i].color %>">
+        <i class="fas <%= features[i].icon %> fa-3x"></i>
+        <h3><%= features[i].title %></h3>
+        <p><%= features[i].description %></p>
+      </div>
+    <% } %>
+  </section>
+
+  <div class="clr"></div>
+
+  <footer id="main-footer">
+    <%= footer %>
+  </footer>
+</body>
 </html>
