@@ -1,5 +1,4 @@
-/* Reset defaults back to 0 */
-/* Do this before all sites, border-box especially!!! */
+
 * {
   margin: 0;
   padding: 0;
