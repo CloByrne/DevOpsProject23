@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
         lead: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia commodi beatae sequi iusto itaque',
         paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem ipsam optio dolorum fuga ducimus dolores. Earum voluptatem minus, porro sunt ullam quos enim excepturi nemo ab rerum totam non vitae illum sint repellat, tempore beatae perspiciatis cum. Assumenda, nobis.',
         features: features,
-        footer: 'Hotel BT &copy; 2021, All Rights Reserved'
+        footer: 'Hotel BT; 2023, All Rights Reserved'
     });
 });
 
