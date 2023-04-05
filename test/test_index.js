@@ -1,7 +1,7 @@
 var assert = require('assert');
 var fs = require('fs');
 var path = require('path');
-var index = fs.readFileSync(path.resolve(__dirname, '../index.ejs'), 'utf8');
+const index = fs.readFileSync('views/index.ejs', 'utf8');
 var ejs = require('ejs');
 
 describe('index.ejs', function() {
