@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0210" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-04-05T20:03:18" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="index.ejs" timestamp="2023-04-05T20:03:18" tests="5" file="C:\Users\cloda\OneDrive\Desktop\DevOps\DevOpsProject23\test\test_index.js" time="0.0210" failures="0">
+    <testcase name="index.ejs should contain the correct title" time="0.0110" classname="should contain the correct title">
+    </testcase>
+    <testcase name="index.ejs should display the correct lead" time="0.0040" classname="should display the correct lead">
+    </testcase>
+    <testcase name="index.ejs should contain the correct paragraph" time="0.0020" classname="should contain the correct paragraph">
+    </testcase>
+    <testcase name="index.ejs should contain the correct footer" time="0.0020" classname="should contain the correct footer">
+    </testcase>
+    <testcase name="index.ejs should display the correct number of features" time="0.0020" classname="should display the correct number of features">
+    </testcase>
+  </testsuite>
+</testsuites>
