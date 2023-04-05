@@ -49,9 +49,14 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: install-deps
+          command: npm ci
       - run:
           name: run-tests
-          command: npm run test
+          command: npm test
 
   deploy:
     docker:
