@@ -4,16 +4,18 @@ var path = require('path');
 const index = fs.readFileSync('views/index.ejs', 'utf8');
 var ejs = require('ejs');
 
-describe('index.ejs', function() {
-  it('should contain the correct title', function() {
-    var rendered = ejs.render(index, { title: 'My Hotel' });
-    assert(rendered.includes('<title>My Hotel</title>'));
-  });
+describe("index.ejs", () => {
+    it("should contain the correct title", () => {
+      const html = ejs.render(indexTemplate, { title });
+      const $ = cheerio.load(html);
+      expect($("title").text()).to.equal(title);
+    });
   
-  it('should display the correct lead', function() {
-    var rendered = ejs.render(index, { lead: 'Welcome to My Hotel' });
-    assert(rendered.includes('Welcome to My Hotel'));
-  });
+    it("should display the correct lead", () => {
+      const html = ejs.render(indexTemplate, { lead });
+      const $ = cheerio.load(html);
+      expect($(".lead").text()).to.equal(lead);
+    });
   
   it('should contain the correct paragraph', function() {
     var rendered = ejs.render(index, { paragraph: 'Learn about the history of our hotel' });
