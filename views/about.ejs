@@ -17,47 +17,37 @@
           <li><a class="current" href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>    
-      
       </div>
     </nav>
-
   </header>
-
   <section id="about-info" class="bg-light py-3">
     <div class="container">
       <div class="info-left">
         <h1 class="l-heading"><span class="text-primary">About</span> Hotel Murray</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima rerum neque ipsam qui aliquam consequuntur eveniet mollitia suscipit laborum similique ab vero a excepturi eaque exercitationem magni dolores, in animi?</p>
-        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia molestias dolor quidem error eius expedita modi, corporis nisi fuga eos!</div>
+        <p><%= hotelInfo %></p>
+        <div><%= hotelDescription %></div>
       </div>
       <div class="info-right">
         <img src="./img/image_resources/photo-2.jpg" alt="hotel">
       </div>
     </div>
-
   </section>
-  
   <div class="clr"></div>
-
   <section id="testimonials" class="py-3"> 
     <div class="container">
       <h2 class="l-heading">What Our Guests Say</h2>
       <div class="testimonial bg-primary">
         <img src="./img/image_resources/person-1.jpg" alt="Jessica">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugiat deserunt animi numquam! Deserunt, quas voluptate saepe sequi velit deleniti perspiciatis reprehenderit, amet ipsam totam est aliquam laudantium doloribus placeat culpa aliquid autem, maiores laboriosam at et numquam doloremque mollitia!</p>
+        <p><%= testimonialOne %></p>
       </div>
-
       <div class="testimonial bg-primary">
         <img src="./img/image_resources/person-2.jpg" alt="Jen">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum fugiat deserunt animi numquam! Deserunt, quas voluptate saepe sequi velit deleniti perspiciatis reprehenderit, amet ipsam totam est aliquam laudantium doloribus placeat culpa aliquid autem, maiores laboriosam at et numquam doloremque mollitia!</p>
+        <p><%= testimonialTwo %></p>
       </div>
-
     </div>
   </section>
-
-
   <footer id="main-footer">
     <%= footer %>
   </footer>
 </body>
-</html>
+</html> 
