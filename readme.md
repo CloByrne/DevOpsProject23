@@ -1,18 +1,9 @@
-# Devops Example Project
+NCI DevOps Project 2023
 
-# Project Dependencies
-1. Node.js
-2. Truffle
-...
----
-# Install Dependencies
-1. use the cd command to navigate to the downloaded projects directory
-2. Run the npm install command
+CI/CD Pipeline:
 
-# Run Project
-1. use the cd command to navigate to the downloaded projects directory
-2. Run the npm start command to run the project
+Hosted in Github: https://github.com/CloByrne/DevOpsProject23
 
-***
+CircleCI for CI/CD: https://app.circleci.com/pipelines/github/CloByrne/DevOpsProject23
 
-Test edit to test CircleCI access
+Docker to create Image of environment: https://hub.docker.com/repository/docker/denisnci/devops_project_docker_repo/general
