@@ -31,7 +31,8 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 23.0.3
       - run: 
           name: update-npm
           command: 'sudo npm install -g npm@8.1.4'
